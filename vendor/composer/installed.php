@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '9407348effdaa9eeac05cac81710f2712c70021f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '9407348effdaa9eeac05cac81710f2712c70021f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -54,6 +54,12 @@
             'install_path' => __DIR__ . '/../ezyang/htmlpurifier',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'h4cc/wkhtmltoimage-amd64' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '0.12.4',
+            ),
         ),
         'maennchen/zipstream-php' => array(
             'pretty_version' => '2.2.6',
@@ -160,6 +166,15 @@
             'reference' => '0838e0ee4925716fcbbc50ad9e1799b5edfae0a0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../setasign/fpdf',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'silvertipsoftware/wkhtmltoimage-amd64' => array(
+            'pretty_version' => '0.12.5',
+            'version' => '0.12.5.0',
+            'reference' => 'cc62a944175b07084dc64762bc302ced832c6946',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../silvertipsoftware/wkhtmltoimage-amd64',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

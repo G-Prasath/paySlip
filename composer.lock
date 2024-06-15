@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cf48bd6383a51b7b90a5830bb25cf5b",
+    "content-hash": "c366eb5e90732c4c7fe6ad8554af3e60",
     "packages": [
         {
             "name": "dompdf/dompdf",
@@ -963,6 +963,52 @@
                 "source": "https://github.com/Setasign/FPDF/tree/1.8.6"
             },
             "time": "2023-06-26T14:44:25+00:00"
+        },
+        {
+            "name": "silvertipsoftware/wkhtmltoimage-amd64",
+            "version": "0.12.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SilvertipSoftware/wkhtmltoimage-amd64.git",
+                "reference": "cc62a944175b07084dc64762bc302ced832c6946"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SilvertipSoftware/wkhtmltoimage-amd64/zipball/cc62a944175b07084dc64762bc302ced832c6946",
+                "reference": "cc62a944175b07084dc64762bc302ced832c6946",
+                "shasum": ""
+            },
+            "replace": {
+                "h4cc/wkhtmltoimage-amd64": "0.12.4"
+            },
+            "bin": [
+                "bin/wkhtmltoimage-amd64"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Sonnichsen",
+                    "email": "andre@silvertipsoftware.com"
+                }
+            ],
+            "description": "Convert html to image using webkit (qtwebkit). Static linked linux binary for amd64 systems.",
+            "homepage": "http://wkhtmltopdf.org/",
+            "keywords": [
+                "binary",
+                "convert",
+                "image",
+                "snapshot",
+                "thumbnail",
+                "wkhtmltoimage"
+            ],
+            "support": {
+                "source": "https://github.com/SilvertipSoftware/wkhtmltoimage-amd64/tree/0.12.5"
+            },
+            "time": "2019-10-24T16:51:41+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

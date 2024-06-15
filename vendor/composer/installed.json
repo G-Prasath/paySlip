@@ -1007,6 +1007,55 @@
             "install-path": "../setasign/fpdf"
         },
         {
+            "name": "silvertipsoftware/wkhtmltoimage-amd64",
+            "version": "0.12.5",
+            "version_normalized": "0.12.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SilvertipSoftware/wkhtmltoimage-amd64.git",
+                "reference": "cc62a944175b07084dc64762bc302ced832c6946"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SilvertipSoftware/wkhtmltoimage-amd64/zipball/cc62a944175b07084dc64762bc302ced832c6946",
+                "reference": "cc62a944175b07084dc64762bc302ced832c6946",
+                "shasum": ""
+            },
+            "replace": {
+                "h4cc/wkhtmltoimage-amd64": "0.12.4"
+            },
+            "time": "2019-10-24T16:51:41+00:00",
+            "bin": [
+                "bin/wkhtmltoimage-amd64"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Sonnichsen",
+                    "email": "andre@silvertipsoftware.com"
+                }
+            ],
+            "description": "Convert html to image using webkit (qtwebkit). Static linked linux binary for amd64 systems.",
+            "homepage": "http://wkhtmltopdf.org/",
+            "keywords": [
+                "binary",
+                "convert",
+                "image",
+                "snapshot",
+                "thumbnail",
+                "wkhtmltoimage"
+            ],
+            "support": {
+                "source": "https://github.com/SilvertipSoftware/wkhtmltoimage-amd64/tree/0.12.5"
+            },
+            "install-path": "../silvertipsoftware/wkhtmltoimage-amd64"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.29.0",
             "version_normalized": "1.29.0.0",

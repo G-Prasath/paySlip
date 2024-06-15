@@ -2,6 +2,7 @@
     "require": {
         "phpoffice/phpspreadsheet": "^1.29",
         "setasign/fpdf": "^1.8",
-        "dompdf/dompdf": "^3.0"
+        "dompdf/dompdf": "^3.0",
+        "silvertipsoftware/wkhtmltoimage-amd64": "^0.12.5"
     }
 }

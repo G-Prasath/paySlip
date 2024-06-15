@@ -4,6 +4,7 @@ require 'vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
+
 class utilitesFunctions
 {
     private static $inputFileName;
@@ -111,7 +112,8 @@ class utilitesFunctions
         return gmdate("d-m-Y", $unixDate); // format as 'YYYY-MM-DD'
     }
 
-   public static function generateAndDownloadImage($width = 400, $height = 200) {
+    public static function generateAndDownloadImage($width = 400, $height = 200)
+    {
         // Create a new true color image
         $image = imagecreatetruecolor($width, $height);
 
@@ -139,4 +141,5 @@ class utilitesFunctions
         // Free up memory
         imagedestroy($image);
     }
+
 }
