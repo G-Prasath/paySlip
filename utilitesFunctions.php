@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
@@ -112,34 +112,5 @@ class utilitesFunctions
         return gmdate("d-m-Y", $unixDate); // format as 'YYYY-MM-DD'
     }
 
-    public static function generateAndDownloadImage($width = 400, $height = 200)
-    {
-        // Create a new true color image
-        $image = imagecreatetruecolor($width, $height);
-
-        // Allocate background color (white)
-        $bgColor = imagecolorallocate($image, 255, 255, 255);
-
-        // Allocate text color (black)
-        $textColor = imagecolorallocate($image, 0, 0, 0);
-
-        // Text to be written on the image
-        $text = "Downloaded JPG Image";
-
-        // Add text to the image
-        imagestring($image, 5, 10, 80, $text, $textColor);
-
-        // Set the content type header - in this case, image/jpeg
-        header('Content-Type: image/jpeg');
-
-        // Set the filename for download
-        header('Content-Disposition: attachment; filename="downloaded_image.jpg"');
-
-        // Output the image as JPEG to the browser
-        imagejpeg($image);
-
-        // Free up memory
-        imagedestroy($image);
-    }
 
 }

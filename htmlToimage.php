@@ -2,7 +2,7 @@
 
 function htmlToPdf($paySlip, $empName) {
     $curl = curl_init();
-    echo $paySlip;
+
     curl_setopt_array($curl, [
         CURLOPT_URL => "https://yakpdf.p.rapidapi.com/pdf",
         CURLOPT_RETURNTRANSFER => true,
@@ -27,9 +27,9 @@ function htmlToPdf($paySlip, $empName) {
             ]
         ]),
         CURLOPT_HTTPHEADER => [
-            "Content-Type: application/json",
+            "Content-Type: application/json; charset=UTF-8",
             "x-rapidapi-host: yakpdf.p.rapidapi.com",
-            "x-rapidapi-key: 1d4960c005msh8012a7073e288bdp161d1cjsnfe3c00b8c052"
+            "x-rapidapi-key: b059de3dabmsh4091613a6987130p1b1a1fjsne53129498b1d"
         ],
     ]);
 
@@ -42,10 +42,10 @@ function htmlToPdf($paySlip, $empName) {
         return "cURL Error #:" . $err;
     } else {
         // Print the HTTP status code
-        echo "HTTP Status Code: " . $http_status . "\n";
+        // echo "HTTP Status Code: " . $http_status . "\n";
 
         // Print the first few bytes of the response
-        echo "Response Data (first 100 bytes): " . substr($response, 0, 100) . "\n";
+        // echo "Response Data (first 100 bytes): " . substr($response, 0, 100) . "\n";
 
         // Save the PDF response to a file
         if (file_put_contents($empName, $response) !== false) {
